@@ -3,10 +3,6 @@
 // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
 $(document).ready(function(){
-	
-});
-
-$(document).ready(function(){
     var scrolled = false;
     var element_position = $('#about_me_block div p').offset().top;
     $(window).on('scroll', function() {
