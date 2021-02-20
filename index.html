@@ -1,0 +1,430 @@
+<html>
+<head>
+    <title>Deepak Karamchandani - Full Stack Web Developer</title>
+		<meta charset="utf-8">
+    	<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<link href = "./css/navbar.css" rel = "stylesheet" type="text/css">
+		<link href = "./css/main.css" rel = "stylesheet" type="text/css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.0/progressbar.min.js" integrity="sha512-Hivnqo7w/SRPjJY3qvD8Y1CaKbmrmqDjZKYgIFyIag/2bOye6Qk1W99wZYObixwzYoZQeKWPqZ2ifus82GE07A==" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css' type = "text/css">
+		<link href = "./css/carousel.css" rel = "stylesheet" type = "text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+		<script> 
+			new WOW().init();
+		</script>
+		<style>
+			@font-face
+			{
+				font-family: bold_font;
+				src: url("./fonts/bold.ttf");
+			}
+			@font-face
+			{
+				font-family: angellia;
+				src: url("./fonts/angellia.otf");
+			}
+		</style>
+</head>
+<body>
+	<navbar class = "row fixed-top">
+		<div id = "navbar">
+			<div id = "logo">
+				<h3>d<span>kc</span></h3>
+			</div>
+			<ul id = "links_desktop" class = "d-md-block d-none">
+				<li>
+					<a onclick = "nav_scroll('#about_me_block')">
+						About Me
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#skills_block')">
+						Skills
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#experience_block')">
+						Experience
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#projects_block')">
+						Projects
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#contacts_block')">
+						Contact
+					</a>
+				</li>
+			</ul>
+			<div onclick = "launch()" id = "hamburger" class = "d-sm-block d-md-none">
+				<div class = "line"></div>
+				<div class = "line"></div>
+				<div class = "line"></div>
+			</div>
+		</div>
+		<div id = "overlay" class = "row">
+			<ul id = "links_mobile">
+				<li>
+					<a onclick = "nav_scroll('#about_me_block')">
+						About Me
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#skills_block')">
+						Skills
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#experience_block')">
+						Experience
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#projects_block')">
+						Projects
+					</a>
+				</li>
+				<li>
+					<a onclick = "nav_scroll('#contacts_block')">
+						Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+	</navbar>
+	<div id = "rest_container" class = "row container-fluid">
+		<div class = "row container-fluid" id = "intro_block">
+			<div class = "col-md-6 col-12 wow animate__animated animate__fadeInLeft">
+				<div id = "intro_info">
+					<h4>👋 Hi, my name is</h4>
+					<h2>Deepak Karamchandani</h2>
+					<div id = "mysummary">
+                        <p>Full Stack Developer</p><div class = "hline"></div>
+						<h4>Based out of Kolkata,<br>I'm a full stack web<br>developer with a<br>specialisation in <u>Django</u> 
+						</h4>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-6 col-12 wow animate__animated animate__fadeInRight">
+				<div id = "intro_image_div">
+					<img src = "./images/display_picture.png">
+				</div>
+			</div>
+		</div>
+		<div class = "row container-fluid wow animate__animated animate__zoomIn" id = "about_me_block">
+			<span class = "heading  wow animate__animated animate__zoomIn">About Me</span>
+			<div>
+				<p class = "wow animate__animated animate__zoomIn">
+					I am 20 years old and have lived in Kolkata for 
+					as many years. My love for programming was
+					made evident to me when I replied 'Computer
+					Scientist' to my 6th grade teacher who asked
+					me what I wanted to become when I grew up.
+					From solving basic decimal to bivnary conversion 
+					in 4th grade to spending days working out complex
+					Dynamic Programming problems in my sophomore
+					year of college, I'd say I've come a long way in
+					achieving that childhood aspiration of mine and still
+					have long journey to tread. Apart from programming, 
+                    designing and guitar are some of my other hobbies.
+				</p>
+			</div>
+		</div>
+		<div class = "row container-fluid" id = "skills_block">
+			<span class = "heading wow animate__animated animate__fadeInUp">My Skills</span>
+            <div id = "skills_list">
+                <ul class = "col-md-10 offset-md-1 col-12 wow animate__animated animate__fadeInUp">
+                    <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "90">
+                        </div>
+                        <p>Python</p>
+                    </li>
+                    <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "80">
+                        </div>
+                        <p>Django</p>
+                    </li>
+                    <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "90">
+                        </div>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "85">
+                        </div>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "70">
+                        </div>
+                        <p>JQuery</p>
+                    </li>
+                     <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "70">
+                        </div>
+                        <p>Java</p>
+                    </li>
+                     <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "65">
+                        </div>
+                        <p>C</p>
+                    </li>
+                     <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "60">
+                        </div>
+                        <p>Angular</p>
+                    </li>
+                    <li>
+                        <div class = "progresscontainer">
+                            <input type = "hidden" value = "70">
+                        </div>
+                        <p>Photoshop</p>
+                    </li>
+                </ul>
+            </div>
+			<button onclick = "skills_expand()" id = "skills_btn" class = "more_button">All Skills</button>
+		</div>
+		<div class = "row container-fluid" id = "experience_block">
+			<span class = "heading">Experience</span>
+			<ul>
+				<li>
+					<div class = "experience_item wow animate__animated animate__fadeInUp">
+						<img src = "./images/gipl.png">
+						<h4>Full Stack Intern at Gitanshu Impex Pvt. Ltd.</h4>
+						<p class = "duration">April 2020 - May 2020</p>
+						<p>This was the first internship that I got. As a full stack intern, I was responsible for creating their portfolio website.</p>
+					</div>
+				</li>
+				<li>
+					<div class = "experience_item wow animate__animated animate__fadeInUp">
+						<img src = "./images/youth_india.png">
+						<h4>State IT Head &#38; Full Stack Intern at Youth India Foundation</h4>
+						<p  class = "duration">June 2020 - October 2020</p>
+						<p>Being the State IT Head of the Bengal branch, I handled all their IT operations such as designing and web developement. As a full stack developer, I worked on 3 projects with them.</p>
+					</div>
+				</li>
+				<li>
+					<div class = "experience_item wow animate__animated animate__fadeInUp">
+						<img src = "./images/weblynks.png">
+						<h4>Freelance Full Stack Developer</h4>
+						<p  class = "duration">December 2020 - Present</p>
+						<p>Having gained experience through internships, I started a freelance company with a friend of mine. We offer web and designing services and have worked with 3 clients till now.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+        <div class = "row wow animate__animated animate__zoomIn" id = "projects_block">
+			<span class = "heading"> Projects </span>
+			<div class="blog-slider">
+			  <div class="blog-slider__wrp swiper-wrapper">
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img">
+			        <img src = "./images/moneyseth.jpg" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">December 2020</span>
+			        <div class="blog-slider__title">Moneyseth</div>
+			        <div class="blog-slider__text">This was the second project I got as a freelancer. It was for a Stock Market blogger. Blogs, User registration and Comments were some of the features included. </div>
+                      <div class = "tech_used">Technologies Used:
+                      <br>
+                      <img src="./images/django.png"/>
+                      <img src="./images/html.png"/>
+                      <img src="./images/css3.png"/>
+                      <img src="./images/bootstrap.png"/>
+                      <img src="./images/jquery.png">
+                      </div>
+			        <a href="https://www.moneyseth.com" class="blog-slider__button">LINK TO WEBSITE</a>
+			      </div>
+			    </div>
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" style = "background-color: #1f2029;">
+			        <img src = "./images/imdb_clone.jpg" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">January 2021</span>
+			        <div class="blog-slider__title">IMDb Clone</div>
+			        <div class="blog-slider__text">I made this during the time I was learning about APIs. I used the TMDb API for fetching the information.</div>
+                    <div class = "tech_used">Technologies Used:
+                      <br>
+                      <img src="./images/django.png"/>
+                      <img src="./images/html.png"/>
+                      <img src="./images/css3.png"/>
+                      <img src="./images/bootstrap.png"/>
+                      <img src="./images/jquery.png">
+                      </div>
+			        <a href="https://deepakkc007.pythonanywhere.com" class="blog-slider__button">LIVE DEMO</a>
+			      </div>
+			    </div>
+			    
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img">
+			        <img src = "./images/gitanshuimpex.jpg" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">April 2020</span>
+			        <div class="blog-slider__title">Gitanshu Impex Portfolio Website</div>
+			        <div class="blog-slider__text">This was the first commercial project I worked on. I made this while I was interning for a merchant company named Gitanshu Impex, who export and import products internationally.</div>
+                    <div class = "tech_used">Technologies Used:
+                      <br>
+                      <img src="./images/django.png"/>
+                      <img src="./images/html.png"/>
+                      <img src="./images/css3.png"/>
+                      <img src="./images/jquery.png">
+                      </div>
+			        <a href="https://www.gitanshuimpex.net" class="blog-slider__button">LINK TO WEBSITE</a>
+			      </div>
+			    </div>
+			      
+			    <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" style = "background-color: #F9F9F9;">
+			        <img src = "./images/youthindiaevents.png" alt="">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">August 2020</span>
+			        <div class="blog-slider__title">Youth India Events</div>
+			        <div class="blog-slider__text">I worked on this project while I was interning with Youth India Foundation. The purpose of this website was to act as a universal registration platform for all the online events conducted by them and initially had Paytm gateway integrated which has now been changed to Razorpay gateway.</div>
+                    <div class = "tech_used">Technologies Used:
+                      <br>
+                      <img src="./images/django.png"/>
+                      <img src="./images/html.png"/>
+                      <img src="./images/css3.png"/>
+                    </div>
+			        <a href="https://www.youthindiaevents.com" class="blog-slider__button">LINK TO WEBSITE</a>
+			      </div>
+			    </div>
+                <div class="blog-slider__item swiper-slide">
+			      <div class="blog-slider__img" style = "background-color: #F9F9F9;">
+			        <img src = "./images/weblynks_website.jpg" alt="" style = "padding: 0;">
+			      </div>
+			      <div class="blog-slider__content">
+			        <span class="blog-slider__code">December 2020</span>
+			        <div class="blog-slider__title">WebLynks Portfolio</div>
+			        <div class="blog-slider__text">This was the portfolio website for my freelancing company, WebLynks.</div>
+                    <div class = "tech_used">Technologies Used:
+                      <br>
+                      <img src="./images/html.png"/>
+                      <img src="./images/css3.png"/>
+                      <img src="./images/jquery.png">
+                    </div>
+			        <a href="https://www.weblynks.in" class="blog-slider__button">LINK TO WEBSITE</a>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="blog-slider__pagination"></div>
+			</div>
+        </div>
+        <div class = "row container-fluid" id = "contacts_block">
+            <span class = "heading wow animate__animated animate__zoomIn">Contact Me</span>
+            <div class = "wow animate__animated animate__slideInUp">
+            <h3>Let's Talk</h3>
+            <p>To get in touch in me, you can mail me at <span id = "mail">kcdeepak16@gmail.com</span> or drop me a message in any of the platforms listed below. </p>
+            <ul class="soc">
+              <li>
+                <a class="github" href="https://github.com/kcdeepak16" title="GitHub">
+                  <div class="ir">
+                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
+                      <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/deepak-karamchandani-a86055162/" title="LinkedIn">
+                  <div class="ir">
+                    <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
+                      <path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+                <li>
+                <a class="whatsapp" href="https://wa.me/918017586761/?text=Hello%20Deepak" title="LinkedIn">
+                  <div class="ir">
+                    <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid meet" width="512" height="512">
+                        <path d="M519 454c4 2 7 10-1 31-6 16-33 29-49 29-96 0-189-113-189-167 0-26 9-39 18-48 8-9 14-10 18-10h12c4 0 9 0 13 10l19 44c5 11-9 25-15 31-3 3-6 7-2 13 25 39 41 51 81 71 6 3 10 1 13-2l19-24c5-6 9-4 13-2zM401 200c-110 0-199 90-199 199 0 68 35 113 35 113l-20 74 76-20s42 32 108 32c110 0 199-89 199-199 0-111-89-199-199-199zm0-40c133 0 239 108 239 239 0 132-108 239-239 239-67 0-114-29-114-29l-127 33 34-124s-32-49-32-119c0-131 108-239 239-239z"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+               <li>
+                <a class="hackerrank" href="https://www.hackerrank.com/kcdeepak16" title="LinkedIn">
+                  <div class="ir">
+                    <svg height="512" width="512" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M-1-1h582v402H-1z" fill="none"/>
+                        <path d="M454.843 141.001c-13.019-22.417-172.832-115-198.859-115-26.019 0-185.895 92.351-198.84 115-12.947 22.649-13.019 207.358 0 230.009 13.018 22.639 172.839 114.989 198.84 114.989 26 0 185.841-92.466 198.851-114.999 13.007-22.533 13.016-207.583.008-229.999zM309.862 398.15c-3.559 0-36.756-32.137-34.141-34.762.781-.78 5.625-1.328 15.768-1.644 0-23.564.53-61.622.844-77.553.038-1.814-.395-3.081-.395-5.256h-71.812c0 6.379-.412 32.523 1.232 65.479.205 4.078-1.42 5.353-5.158 5.335-9.102-.025-18.211-.099-27.321-.071-3.683.009-5.274-1.374-5.157-5.488.826-30.043 2.66-75.488-.134-191.07v-2.849c-8.688-.314-14.717-.862-15.508-1.652-2.624-2.624 31.032-34.76 34.581-34.76 3.558 0 36.989 32.145 34.383 34.76-.782.781-7.098 1.338-15.067 1.652v2.84c-2.174 23.135-1.823 71.506-2.362 94.686h72.107c0-4.089.351-31.212-1.077-75.145-.091-3.047.853-4.646 3.781-4.672 9.945-.072 19.9-.117 29.855-.055 3.108.019 4.105 1.546 4.043 4.834-3.28 171.861-.594 159.867-.594 188.975 7.97.315 15.112.864 15.895 1.655 2.588 2.615-30.205 34.761-33.763 34.761z"/>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script>
+        var swiper = new Swiper('.blog-slider', {
+          spaceBetween: 30,
+          slidesPerView: 'auto',
+          effect: 'fade',
+          loop: true,
+          mousewheel: {
+            invert: false,
+          },
+          pagination: {
+            el: '.blog-slider__pagination',
+            clickable: true,
+          }
+        });
+    </script>
+    <script src = "./js/main.js"></script>
+    <script>
+        var active = false;
+        function launch()
+        {
+            if(!active)
+            {
+                $(".line:nth-child(1)").css('animation','rotatenav1 .5s linear forwards normal');
+                $(".line:nth-child(2)").hide();
+                $(".line:nth-child(3)").css('animation','rotatenav2 .5s linear forwards normal');
+                active = true;
+                $("#overlay").slideDown(500, function(){
+                    $("#links_mobile li:nth-child(1)").fadeTo(200,1);
+                    $("#links_mobile li:nth-child(2)").fadeTo(400,1);
+                    $("#links_mobile li:nth-child(3)").fadeTo(600,1);
+                    $("#links_mobile li:nth-child(4)").fadeTo(800,1);
+                    $("#links_mobile li:nth-child(5)").fadeTo(1000,1);
+                });
+            }
+            else
+            {
+                active = false;
+                $("#links_mobile li:nth-child(5)").fadeTo(50, 0, function(){
+                    $("#links_mobile li:nth-child(4)").fadeTo(100, 0);
+                    $("#links_mobile li:nth-child(3)").fadeTo(200, 0);
+                    $("#links_mobile li:nth-child(2)").fadeTo(300, 0);
+                    $("#links_mobile li:nth-child(1)").fadeTo(400, 0, function(){
+                       $("#overlay").slideUp(500);
+                       $(".line:nth-child(1)").css('animation','rotatenav12 .5s linear forwards normal');
+                       $(".line:nth-child(2)").show(100);
+                       $(".line:nth-child(3)").css('animation','rotatenav21 .5s linear forwards normal'); 
+                    });
+                });
+            }
+        }
+    </script>
+</body>
+</html>

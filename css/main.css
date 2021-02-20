@@ -1,0 +1,342 @@
+#intro_block
+{
+    height: 100vh;
+	width: 100%;
+	padding-top: 10rem;
+	position: relative;
+}
+body
+{
+	background-color: rgb(34,34,34,.97);
+}
+#intro_info
+{
+	position: absolute;
+	top:80%;
+	left:10%;
+	transform: translateY(-80%);
+}
+#intro_info h2
+{
+	background-image: linear-gradient(180deg, rgb(255,255,255,0) 60%, var(--orange) 60%);
+	display: inline-block;
+	padding: 0 .2rem;
+}
+#mysummary
+{
+	margin: 5rem 0;
+}
+#mysummary p
+{
+	color: var(--orange);
+	font-size: 1rem;
+	display: inline-block;
+}
+#mysummary .hline
+{
+	width: 10rem;
+	height: .1rem;
+	background-color: var(--orange);
+	display: inline-block;
+	line-height: 1rem;
+	margin-left: 1rem;
+	transform: translateY(-.2rem);
+}
+#intro_image_div
+{
+	height: 100%;
+	position: relative;
+}
+#intro_image_div img
+{
+	position: absolute;
+	width: 90%;
+    height: auto;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#about_me_block
+{
+	text-align: center;
+}
+#about_me_block div
+{
+	width: 70%;
+	margin: 10rem auto;
+}
+#skills_block
+{
+	text-align: center;
+	position: relative;
+}
+#skills_list
+{
+    height: 30rem;
+    overflow-y: hidden;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+#skills_block ul
+{
+	padding: 5rem 0 2rem 0;
+}
+#skills_block ul li
+{
+	display: inline-block;
+	margin: 2rem;
+}
+.progresscontainer
+{
+  	width: 15rem;
+  	height: 15rem;
+  	position: relative;
+  	font-size: 2rem;
+  	display: inline-block;
+}
+#skills_block ul li p
+{
+	margin: 2rem 0;
+}
+.more_button
+{
+	width: 15rem;
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	height: 4rem;
+	background-color: inherit;
+	outline: none;
+	border: none;
+	font-family: bold_font;
+	color: rgb(255,255,255,.6);
+	font-size: 1.5rem;
+	transition: all .3s ease-out;
+}
+.more_button:hover
+{	
+	text-decoration: underline;
+}
+.more_button:focus
+{
+	outline: none;
+}
+#experience_block
+{
+	text-align: center;
+}
+#experience_block ul
+{
+	list-style: none;
+	padding-top: 5rem;
+}
+#experience_block ul li
+{
+	display: inline-block;
+	margin: 2rem 3rem 0 3rem;
+}
+.experience_item
+{
+	width: 35rem;
+}
+.experience_item img
+{
+	width: 15rem;
+	height: auto;
+}
+.experience_item h4
+{
+	height: 10rem;
+}
+.experience_item p
+{
+	display: -webkit-inline-box;
+}
+.experience_item>*
+{
+	margin: 1rem 0;
+}
+.duration
+{
+	color: var(--orange);
+}
+#projects_block
+{
+	text-align: center;
+}
+#about_me_block, #skills_block, #experience_block, #projects_block
+{
+    padding: 5rem 0;
+}
+#contacts_block
+{
+    text-align: center;
+}
+#contacts_block h3, #contacts_block p
+{
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+#contacts_block p
+{
+    width: 60%;
+}
+#mail
+{
+    padding: .2rem;
+    background-color: var(--orange);
+}
+.ir {
+  display: block;
+  overflow: visible;
+  padding: 0 0 100%;
+  position: relative;
+  height: 0;
+  width: 100%;
+}
+
+.ir > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
+  margin: 0 auto;
+  padding: 4.8rem;
+  text-align: center;
+  width: 110rem;
+  max-width: 100%;
+}
+.soc li {
+  display: inline-block;
+  margin: 0 .5rem;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  height: 6rem;
+  width: 6rem;
+}
+.github
+{
+   fill: white;
+}
+.github:hover
+{
+    background: white;
+}
+.linkedin
+{
+    fill: #2691d9;
+}
+.linkedin:hover
+{
+    background: #2691d9;
+}
+.whatsapp
+{
+    fill: #25D366;
+}
+.whatsapp:hover
+{
+    background: #25D366;
+}
+.hackerrank
+{
+    fill:  #2ec866;
+}
+.hackerrank:hover
+{
+    background: #2ec866;
+}
+.github:hover, .linkedin:hover, .whatsapp:hover, .hackerrank:hover
+{
+  border-radius: 100%;
+  fill: var(--lblack);
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
+}
+@media only screen and (max-width: 650px) 
+{
+	.carousel
+	{
+		height: 60vh !important;
+	}
+	#intro_block
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#intro_info h2
+	{
+		font-size: 4rem;
+	}
+    #intro_image_div img
+    {
+        width: 120%;
+        left: 45%;
+        bottom: -10% !important;
+    }
+    .experience_item
+    {
+        width: 30rem;
+    }
+	#intro_block .col-md-6
+	{
+		height: 50% !important;
+		position: relative;
+	}
+	#intro_info
+	{
+		left: 0%;
+        top: 60% !important;
+	}
+}
+@media only screen and (max-width: 400px) 
+{
+    #intro_info h2
+	{
+		font-size: 3.5rem;
+	}
+}
+@media only screen and (max-width: 350px)
+{
+    #intro_info h2
+	{
+		font-size: 3rem;
+	}
+}
+@media only screen and (max-width: 375px)
+{
+    #intro_info
+    {
+        top: 90% !important;
+    }
+}
+@media only screen and (max-width: 800px) and (min-height: 1000px)
+{
+    #intro_block
+    {
+        height: 40vh;
+    }
+}
+@media only screen and (max-height: 800px) and (min-width: 1000px) and (max-width: 1200px)
+{
+     #intro_block
+    {
+        height: 60vh;
+    }
+}
+@media only screen and (min-height: 1300px) and (max-width: 1050px)
+{
+    #intro_block
+    {
+        height: 40vh;
+    }
+}
