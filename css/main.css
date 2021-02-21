@@ -1,6 +1,6 @@
 #intro_block
 {
-    height: 100vh;
+    height: 70rem;
 	width: 100%;
 	padding-top: 10rem;
 	position: relative;
@@ -272,6 +272,7 @@ body
 	{
 		display: flex;
 		flex-direction: column-reverse;
+        height: 100vh;
 	}
 	#intro_info h2
 	{
